@@ -15,52 +15,40 @@
                 <h4 class="about-title">Sistem Informasi Geografis Ngemilku</h4>
 
                 <div class="about-section">
-                    <h6>Deskripsi Proyek</h6>
+                    <h6>Tentang Proyek</h6>
                     <p class="mb-0">
-                        Ngemil Spot GIS adalah aplikasi berbasis web yang memanfaatkan teknologi Geographic Information
-                        System (GIS)
-                        untuk membantu pengguna menemukan tempat jajan atau kuliner terdekat di wilayah Kota Palu.
-                        Aplikasi ini menyediakan informasi detail lokasi, rute, jam operasional, dan deskripsi tempat.
+                        Ngemil Spot GIS merupakan aplikasi berbasis web yang mengintegrasikan teknologi Geographic
+                        Information System (GIS) untuk membantu pengguna menemukan lokasi kuliner terbaik dan terdekat
+                        di Kota Palu. Melalui tampilan peta interaktif, pengguna dapat melihat titik-titik kuliner,
+                        detail lokasi, rute navigasi, jam operasional, serta deskripsi singkat dari setiap tempat.
+                        <br><br>
+                        Aplikasi ini dirancang agar mudah diakses dan bermanfaat bagi masyarakat, menghadirkan pencarian kuliner yang cepat, akurat, dan informatif. Antarmuka yang intuitif memungkinkan pengguna menemukan lokasi kuliner hanya dengan beberapa klik.
                     </p>
-                </div>
-
-                <div class="about-section1">
-                    <h6>Tim Pengembang</h6>
-                    <div class="team-container">
-                        <div class="team-member">
-                            <img src="{{ asset('fototim/nan.jpg') }}" alt="Anggota 1" class="member-photo">
-                            <div class="member-info">
-                                <div class="member-name">Adnan Mufti Maulana</div>
-                                <div class="member-nim">F55124061</div>
-                            </div>
-                        </div>
-                        <div class="team-member">
-                            <img src="{{ asset('fototim/wann.jpg') }}" alt="Anggota 2" class="member-photo">
-                            <div class="member-info">
-                                <div class="member-name">Wanda Remalia Toripalu</div>
-                                <div class="member-nim">F55124063</div>
-                            </div>
-                        </div>
-                        <div class="team-member">
-                            <img src="{{ asset('fototim/mas.jpg') }}" alt="Anggota 3" class="member-photo">
-                            <div class="member-info">
-                                <div class="member-name">Dimas Reginald</div>
-                                <div class="member-nim">F55124055</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="about-section2">
-                    <h6>Tujuan Pembuatan</h6>
+                    <h6>Tujuan Pengembangan</h6>
                     <p class="mb-0">
-                        Proyek ini bertujuan untuk memudahkan masyarakat dalam menemukan tempat kuliner terdekat,
-                        meningkatkan promosi UMKM kuliner lokal, serta menerapkan teknologi GIS dalam kehidupan
-                        sehari-hari.
+                        Pembuatan aplikasi ini bertujuan untuk menyediakan platform informasi kuliner yang mudah
+                        diakses,
+                        mendukung promosi UMKM lokal, memanfaatkan teknologi GIS sebagai solusi digital modern, serta
+                        membantu masyarakat menemukan tempat jajan secara efisien dan terarah.
                     </p>
+                </div>
+
+                <div class="about-section3">
+                    <h6>Manfaat Aplikasi</h6>
+                    <ul class="mb-0">
+                        <li>Memudahkan pencarian lokasi kuliner terdekat secara real-time.</li>
+                        <li>Menyediakan rute dan informasi lengkap setiap titik kuliner.</li>
+                        <li>Mendukung perkembangan UMKM kuliner di Kota Palu.</li>
+                        <li>Menerapkan teknologi GIS sebagai media pemetaan digital modern.</li>
+                        <li>Meningkatkan kemudahan akses informasi bagi masyarakat.</li>
+                    </ul>
                 </div>
             </div>
         </div>
+
 
         <!-- Search bar -->
         <div class="position-relative">

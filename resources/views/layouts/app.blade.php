@@ -147,8 +147,8 @@
             position: absolute;
             top: 250%;
             left: 50%;
-            transform: translateX(-50%);
-            width: 800px;
+            transform: translateX(-40%);
+            width: 1000px;
             background: rgba(255, 255, 255, 0.95);
             border-radius: 12px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
