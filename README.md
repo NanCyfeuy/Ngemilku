@@ -1,7 +1,5 @@
 # Ngemilku - GIS Lokasi Kuliner Kota Palu 🎯
 
----
-
 ## Tentang Proyek 📖
 
 **SIG Ngemilku** adalah aplikasi Sistem Informasi Geografis (GIS) berbasis web untuk pencarian spot kuliner di Kota Palu. Aplikasi ini mendukung promosi UMKM lokal lewat pemetaan digital, membantu masyarakat menemukan tempat kuliner secara real-time, mudah, dan informatif.
