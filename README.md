@@ -165,9 +165,7 @@ Ngemilku/
 
 **Tabel utama:**
 - `users`: data admin
-- `spots`: lokasi kuliner (nama, lat, long, deskripsi, jam)
-- `kecamatan`: data polygon kecamatan
-- `jalan`: polyline jalan utama
+- `lokasi`: lokasi kuliner (nama, lat, long, deskripsi, jam)
 
 **Migrasi:**
 ```
