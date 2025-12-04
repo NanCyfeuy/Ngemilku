@@ -1,61 +1,191 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Ngemilku - GIS Lokasi Kuliner Kota Palu 🎯
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Daftar Isi
+1. [Tentang Proyek 📖](#tentang-proyek-📖)
+2. [Teknologi yang Digunakan 🛠️](#teknologi-yang-digunakan-🛠️)
+3. [Instalasi Lengkap 🚀](#instalasi-lengkap-🚀)
+4. [Konfigurasi ⚙️](#konfigurasi-⚙️)
+5. [Panduan Penggunaan 📝](#panduan-penggunaan-📝)
+6. [Struktur Proyek 📂](#struktur-proyek-📂)
+7. [Database 🗄️](#database-🗄️)
+8. [Kontribusi, Lisensi & Support 👥](#kontribusi-lisensi--support-👥)
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Tentang Proyek 📖
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**SIG Ngemilku** adalah aplikasi Sistem Informasi Geografis (GIS) berbasis web untuk pencarian spot kuliner di Kota Palu. Aplikasi ini mendukung promosi UMKM lokal lewat pemetaan digital, membantu masyarakat menemukan tempat kuliner secara real-time, mudah, dan informatif.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**Tujuan & Manfaat:**
+- Memudahkan pencarian lokasi kuliner terdekat
+- Menyediakan rute & detail informasi titik kuliner
+- Mendukung perkembangan UMKM kuliner Palu
+- Mengaplikasikan teknologi GIS secara modern
 
-## Learning Laravel
+**Fitur Utama:**
+- Peta interaktif Kota Palu, marker kuliner, detail lokasi
+- Pencarian lokasi & navigasi rute otomatis
+- Admin dashboard: tambah/edit/hapus lokasi, kelola data kecamatan & jalan
+- Public & protected endpoints untuk konsumsi data
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Teknologi yang Digunakan 🛠️
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+**Backend**
+- Laravel 12
+- PHP 8.2+
+- MySQL
 
-## Laravel Sponsors
+**Frontend**
+- Blade
+- Tailwind CSS 4
+- Vite
+- Leaflet.js
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+**Development Tools**
+- Composer
+- NPM
+- PHPUnit
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## Instalasi Lengkap 🚀
 
-## Contributing
+1. **Clone repo:**
+   ```
+   git clone https://github.com/NanCyfeuy/Ngemilku.git
+   cd Ngemilku
+   ```
+2. **Install dependency backend:**
+   ```
+   composer install
+   ```
+3. **Install dependency frontend:**
+   ```
+   npm install
+   ```
+4. **Build frontend assets:**
+   ```
+   npm run build
+   ```
+5. **Copy file konfigurasi:**
+   ```
+   cp .env.example .env
+   ```
+6. **Edit `.env`:**
+   - Isi data database: DB_DATABASE, DB_USERNAME, DB_PASSWORD
+   - Set APP_URL sesuai kebutuhan
+7. **Generate app key:**
+   ```
+   php artisan key:generate
+   ```
+8. **Setup database:**
+   ```
+   php artisan migrate --seed
+   ```
+9. **Jalankan server:**
+   ```
+   php artisan serve
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## Konfigurasi ⚙️
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **File utama:**
+  - `.env` = konfigurasi environment (APP_KEY, DB, MAIL, dsb.)
+  - `config/database.php` = pengaturan database
+- **Contoh konfigurasi:**
+  ```
+  APP_NAME=Ngemilku
+  APP_ENV=local
+  APP_KEY=base64:...
+  DB_CONNECTION=mysql
+  DB_HOST=127.0.0.1
+  DB_PORT=3306
+  DB_DATABASE=ngemilku
+  DB_USERNAME=root
+  DB_PASSWORD=
+  ```
+- **Penjelasan:**
+  - `APP_ENV`: mode aplikasi
+  - `DB_*`: pengaturan database
+  - `MAIL_*`: pengiriman email (jika diperlukan)
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Panduan Penggunaan 📝
 
-## License
+**URL Aplikasi**
+- Publik: `/` (lihat peta, spot kuliner)
+- Admin: `/admin` (dashboard kelola data)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+**Alur Kelola Data Lokasi**
+- Login sebagai admin
+- Tambah, edit, atau hapus spot kuliner di dashboard
+- Set marker & detail lokasi di peta
+
+---
+
+## Struktur Proyek 📂
+
+```
+Ngemilku/
+├── app/
+│   ├── Http/
+│   ├── Models/
+├── public/
+│   ├── brand.png
+│   ├── Poly kecamatan/
+│   └── jalan.qmd
+├── resources/
+│   ├── views/
+│   │   ├── home.blade.php
+│   │   ├── admin/
+│   │   └── layouts/
+├── database/
+│   ├── migrations/
+│   ├── seeders/
+├── routes/
+│   └── web.php
+├── .env
+└── README.md
+```
+
+- **`app/Models/`**: model database
+- **`public/`**: file statis, geojson, img
+- **`resources/views/`**: tampilan Blade (publik & admin)
+- **`database/migrations/`**: migrasi tabel
+- **`routes/web.php`**: routing web
+
+---
+
+## Database 🗄️
+
+**Tabel utama:**
+- `users`: data admin
+- `spots`: lokasi kuliner (nama, lat, long, deskripsi, jam)
+- `kecamatan`: data polygon kecamatan
+- `jalan`: polyline jalan utama
+
+**Migrasi:**
+```
+php artisan migrate
+```
+**Seeder:**
+```
+php artisan db:seed
+```
+
+---
+
+## Support 👥
+
+**Kontak Developer**
+- Github: [NanCyfeuy](https://github.com/NanCyfeuy)
+- Email: (adnanmuftimaulana0@gmail.com)
+
+---
+
+> Ngemilku sebagai solusi informasi kuliner modern Kota Palu, mendukung perkembangan UMKM dan kemudahan masyarakat!
