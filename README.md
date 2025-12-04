@@ -153,7 +153,7 @@ Ngemilku/
 
 **Tabel utama:**
 - `users`: data admin
-- `lokasi`: lokasi kuliner (nama, lat, long, deskripsi, jam)
+- `lokasi`: lokasi kuliner (nama, alamat, deskripsi, longitude, latitude,hotlink,gambar, jam_operasional)
 
 **Migrasi:**
 ```
